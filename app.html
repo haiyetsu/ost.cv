@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="OST Portfolio App Module" />
+  <title>OST CV | App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="sidebar__brand" href="index.html#home" aria-label="OST CV Home">
+        <span class="brand-mark">OST</span>
+        <span class="brand-copy">
+          <span class="brand-copy__name">OST CV</span>
+          <span class="brand-copy__meta">Creative Systems</span>
+        </span>
+      </a>
+
+      <div class="profile-card">
+        <div class="profile-card__image">
+          <span class="profile-card__image-inner">O</span>
+        </div>
+        <div class="profile-card__body">
+          <span class="profile-card__kicker">Creative Technologist</span>
+          <h2 class="profile-card__name">Ost Carter</h2>
+          <div class="profile-card__status">
+            <span class="status-dot"></span>
+            <span>Available for selected projects</span>
+          </div>
+        </div>
+      </div>
+
+      <nav class="side-nav">
+        <a class="nav-link" href="index.html#home">
+          <svg class="nav-icon" viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V21h-6v-6H9v6H3z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          <span>Home</span>
+        </a>
+        <a class="nav-link" href="index.html#about">
+          <svg class="nav-icon" viewBox="0 0 24 24"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4 20a8 8 0 0 1 16 0" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          <span>About</span>
+        </a>
+        <a class="nav-link" href="index.html#experience">
+          <svg class="nav-icon" viewBox="0 0 24 24"><path d="M4 7h16v10H4zM4 17h16v4H4z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          <span>Resume</span>
+        </a>
+        <a class="nav-link active" href="app.html">
+          <svg class="nav-icon" viewBox="0 0 24 24"><path d="M3 5h7v7H3zM14 5h7v7h-7zM3 16h7v7H3zM14 16h7v7h-7z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          <span>Works</span>
+        </a>
+        <a class="nav-link" href="index.html#services">
+          <svg class="nav-icon" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          <span>Services</span>
+        </a>
+        <a class="nav-link" href="index.html#journal">
+          <svg class="nav-icon" viewBox="0 0 24 24"><path d="M4 4h10a4 4 0 0 1 4 4v12H8a4 4 0 0 0-4 4z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          <span>Journal</span>
+        </a>
+        <a class="nav-link" href="index.html#contact">
+          <svg class="nav-icon" viewBox="0 0 24 24"><path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4 7 8 7 8-7" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          <span>Contact</span>
+        </a>
+      </nav>
+
+      <div class="sidebar__bottom">
+        <a class="download-cv" href="assets/data/ost-carter-cv.pdf" target="_blank" rel="noopener">
+          <span class="download-icon">↧</span>
+          <span>Download CV</span>
+        </a>
+        <div class="socials">
+          <a href="#" aria-label="Dribbble" class="social-link">Dribbble</a>
+          <a href="#" aria-label="Behance" class="social-link">Behance</a>
+          <a href="#" aria-label="LinkedIn" class="social-link">LinkedIn</a>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <section class="section hero-section" id="home">
+        <div class="hero-wrap">
+          <div class="hero-copy">
+            <span class="section-label">Portfolio App / 2026</span>
+            <h1 class="hero-title" id="heroTitle">下一步就是实现</h1>
+            <p class="hero-subtitle" id="heroSubtitle">
+              从概念到系统，从系统到可感知的数字体验。
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#works">Explore Work</a>
+              <a class="btn btn-secondary" href="#contact">Let’s Collaborate</a>
+            </div>
+            <div class="hero-proof">
+              <div>
+                <span class="hero-proof__number" id="heroYears">8+</span>
+                <span class="hero-proof__label">Years of Experience</span>
+              </div>
+              <div>
+                <span class="hero-proof__number" id="heroProjects">34</span>
+                <span class="hero-proof__label">Projects Delivered</span>
+              </div>
+              <div>
+                <span class="hero-proof__number" id="heroLocations">12</span>
+                <span class="hero-proof__label">Regions & Markets</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="orb-wrap">
+              <div class="orb orb-one"></div>
+              <div class="orb orb-two"></div>
+              <div class="hero-frame">
+                <div class="hero-frame__top">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="hero-frame__grid">
+                  <div class="hero-frame__placeholder">
+                    <div class="hero-frame__main">
+                      <span class="hero-frame__label">Strategy / 2026</span>
+                      <span class="hero-frame__title">Systems for Better Futures</span>
+                    </div>
+                    <div class="hero-frame__chart">
+                      <span class="bar bar-one"></span>
+                      <span class="bar bar-two"></span>
+                      <span class="bar bar-three"></span>
+                      <span class="bar bar-four"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="hero-frame__meta">
+                  <span>01 // Digital Architecture</span>
+                  <span class="meta-line"></span>
+                  <span>Shanghai / Remote</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section works-section" id="works">
+        <div class="section-heading">
+          <span class="section-label">Selected Work</span>
+          <h2 class="section-title">Portfolio and product systems.</h2>
+        </div>
+
+        <div class="app-feature">
+          <div class="app-feature__left">
+            <span class="section-label">Featured Prototype</span>
+            <h3 class="app-feature__title">Untitled Figma Prototype</h3>
+            <p class="app-feature__text">
+              Selected work system exploring digital experience flow, early strategy, and interface narrative.
+            </p>
+            <div class="app-feature__meta">
+              <span>2026</span>
+              <span>Experience Strategy</span>
+              <span>Figma Prototype</span>
+            </div>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="https://www.figma.com/proto/JEuKbzcXjWRlCJ1JEbhKOh/Untitled?node-id=1-140&p=f&viewport=115%2C155%2C0.12&t=uXr4tCwvJjoR7LIV-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A140&show-proto-sidebar=1&page-id=0%3A1" target="_blank" rel="noopener">Open Prototype</a>
+              <a class="btn btn-secondary" href="#contact">Discuss Project</a>
+            </div>
+          </div>
+          <div class="app-feature__right">
+            <div class="app-feature__frame">
+              <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FJEuKbzcXjWRlCJ1JEbhKOh%2FUntitled%3Fnode-id%3D1-140%26p%3Df%26viewport%3D115%252C155%252C0.12%26t%3DuXr4tCwvJjoR7LIV-1%26scaling%3Dmin-zoom%26content-scaling%3Dfixed%26starting-point-node-id%3D1%253A140%26show-proto-sidebar%3D1%26page-id%3D0%253A1" allowfullscreen title="Untitled Figma Prototype"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-grid" id="portfolioGrid">
+          <article class="portfolio-card">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__tag">Strategy + Experience</span>
+              <span class="image-shape"></span>
+            </div>
+            <div class="portfolio-card__content">
+              <div class="portfolio-card__top">
+                <span class="portfolio-card__category">Digital Platform</span>
+                <span class="portfolio-card__year">2026</span>
+              </div>
+              <div class="portfolio-card__title">Signal Studio</div>
+              <div class="portfolio-card__description">A modular platform for insight-led teams to transform internal research into product opportunities.</div>
+              <div class="portfolio-card__tags"><span>Strategy</span><span>Product</span><span>Systems</span></div>
+            </div>
+          </article>
+
+          <article class="portfolio-card">
+            <div class="portfolio-card__image">
+              <span class="portfolio-card__tag">Identity + Web</span>
+              <span class="image-shape"></span>
+            </div>
+            <div class="portfolio-card__content">
+              <div class="portfolio-card__top">
+                <span class="portfolio-card__category">Editorial Ecosystem</span>
+                <span class="portfolio-card__year">2025</span>
+              </div>
+              <div class="portfolio-card__title">Field Atlas</div>
+              <div class="portfolio-card__description">A publishing and learning platform built around immersive editorial systems and regional knowledge maps.</div>
+              <div class="portfolio-card__tags"><span>Editorial</span><span>Web</span><span>Identity</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section services-section" id="services">
+        <div class="section-heading">
+          <span class="section-label">Services</span>
+          <h2 class="section-title">How I create momentum.</h2>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <span class="service-card__num">01</span>
+            <div class="service-card__title">Identity Strategy</div>
+            <div class="service-card__description">Positioning, naming, art direction, and strategic visual systems for emerging organizations.</div>
+            <div class="service-card__details"><span>Positioning</span><span>Art direction</span><span>Identity kits</span></div>
+          </article>
+          <article class="service-card">
+            <span class="service-card__num">02</span>
+            <div class="service-card__title">Digital Product Design</div>
+            <div class="service-card__description">Product journeys, UI patterns, prototypes, and high-fidelity experience design from concept to launch.</div>
+            <div class="service-card__details"><span>Product strategy</span><span>Interface design</span><span>Design systems</span></div>
+          </article>
+          <article class="service-card">
+            <span class="service-card__num">03</span>
+            <div class="service-card__title">Creative Systems</div>
+            <div class="service-card__description">Operational visual systems that help teams move faster while keeping brand expression consistent.</div>
+            <div class="service-card__details"><span>Design operations</span><span>Content frameworks</span><span>Campaign systems</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="contact-wrap">
+          <div class="contact-copy">
+            <span class="section-label">Contact</span>
+            <h2 class="section-title">Turn a vision into a working experience.</h2>
+            <p class="contact-copy__text">
+              Share your ambition, timeline, and team needs. I’ll reply with a practical path to shape the next system.
+            </p>
+            <div class="contact-list">
+              <a class="contact-item" href="mailto:hello@ost.cv">
+                <span class="contact-item__label">Email</span>
+                <span class="contact-item__value">hello@ost.cv</span>
+              </a>
+              <a class="contact-item" href="tel:+8613800000000">
+                <span class="contact-item__label">Phone</span>
+                <span class="contact-item__value">+86 138 0000 0000</span>
+              </a>
+              <span class="contact-item">
+                <span class="contact-item__label">Location</span>
+                <span class="contact-item__value">Shanghai / Remote</span>
+              </span>
+            </div>
+          </div>
+          <form class="contact-form">
+            <div class="form-grid">
+              <label class="form-field">
+                <span>Name</span>
+                <input type="text" name="name" placeholder="Your name">
+              </label>
+              <label class="form-field">
+                <span>Email</span>
+                <input type="email" name="email" placeholder="name@example.com">
+              </label>
+              <label class="form-field full">
+                <span>Project scope</span>
+                <textarea name="message" placeholder="Tell me about the challenge"></textarea>
+              </label>
+              <button class="btn btn-primary form-submit" type="button">Send Inquiry</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script defer src="assets/js/data.js"></script>
+  <script defer src="assets/js/app.js"></script>
+</body>
+</html>

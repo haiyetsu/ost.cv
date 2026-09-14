@@ -1,0 +1,93 @@
+{
+  "resume": {
+    "profile": {
+      "name": "Ost Carter",
+      "title": "Creative Technologist",
+      "location": "Shanghai, China",
+      "email": "hello@ost.cv",
+      "phone": "+86 138 0000 0000",
+      "availability": "Available for selected projects",
+      "summary": "I am a multidisciplinary digital creative working across brand worlds, product systems, and interactive storytelling."
+    },
+    "experience": [
+      {
+        "period": "2023 — Present",
+        "role": "Independent Creative Technologist",
+        "company": "Freelance Practice",
+        "location": "Remote",
+        "highlights": [
+          "Leading strategy, digital direction, and design systems for emerging technology and culture-led teams."
+        ]
+      },
+      {
+        "period": "2020 — 2023",
+        "role": "Design Lead",
+        "company": "One Studio",
+        "location": "Shanghai",
+        "highlights": [
+          "Built an integrated portfolio of product and brand systems for growth-stage clients across commerce and education."
+        ]
+      },
+      {
+        "period": "2017 — 2020",
+        "role": "Digital Experience Designer",
+        "company": "Vector Field",
+        "location": "Shanghai",
+        "highlights": [
+          "Developed immersive campaign systems, modular content kits, and high-performing landing experience prototypes."
+        ]
+      },
+      {
+        "period": "2014 — 2017",
+        "role": "Visual Systems Strategist",
+        "company": "Culture Network",
+        "location": "Shanghai",
+        "highlights": [
+          "Designed visual identities and transformation programs for cultural organizations and public initiatives."
+        ]
+      }
+    ],
+    "services": [
+      {
+        "title": "Identity Strategy",
+        "index": "01",
+        "description": "Positioning, naming, art direction, and strategic visual systems for emerging organizations.",
+        "deliverables": ["Positioning", "Art direction", "Identity kits"]
+      },
+      {
+        "title": "Digital Product Design",
+        "index": "02",
+        "description": "Product journeys, UI patterns, prototypes, and high-fidelity experience design from concept to launch.",
+        "deliverables": ["Product strategy", "Interface design", "Design systems"]
+      },
+      {
+        "title": "Creative Systems",
+        "index": "03",
+        "description": "Operational visual systems that help teams move faster while keeping brand expression consistent.",
+        "deliverables": ["Design operations", "Content frameworks", "Campaign systems"]
+      }
+    ],
+    "education": [
+      {
+        "period": "2012 — 2014",
+        "school": "School of Visual Communication",
+        "degree": "Master of Fine Arts",
+        "location": "Shanghai"
+      }
+    ],
+    "skills": [
+      "Brand strategy",
+      "Digital product design",
+      "Creative technology",
+      "Art direction",
+      "Content systems",
+      "Design operations"
+    ],
+    "contact": {
+      "email": "hello@ost.cv",
+      "phone": "+86 138 0000 0000",
+      "location": "Shanghai / Remote",
+      "website": "https://ost.cv"
+    }
+  }
+}

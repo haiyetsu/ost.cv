@@ -1,0 +1,12 @@
+{
+  "name": "ost-cv-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "description": "Static portfolio site for Ost Carter.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  }
+}
