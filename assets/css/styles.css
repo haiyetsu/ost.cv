@@ -29,6 +29,30 @@
   --max-width: 1440px;
 }
 
+.cursor-invert {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid var(--sage-deep);
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 250, 242, 0.05);
+  box-shadow: 0 0 0 1px var(--line), 0 0 30px rgba(80, 107, 75, 0.14) inset;
+  backdrop-filter: invert(1) grayscale(1) contrast(1.8);
+  -webkit-backdrop-filter: invert(1) grayscale(1) contrast(1.8);
+  opacity: 0;
+}
+
+@keyframes blinkCursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -356,6 +380,15 @@ body::before {
   max-width: 780px;
   margin: 0 0 28px;
   letter-spacing: -0.045em;
+}
+
+.type-title {
+  min-height: 1.2em;
+  white-space: nowrap;
+  border-right: 2px solid var(--sage-deep);
+  width: fit-content;
+  max-width: 100%;
+  animation: blinkCursor 900ms steps(1) infinite;
 }
 
 .hero-subtitle {

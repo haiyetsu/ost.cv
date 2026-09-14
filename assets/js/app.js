@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
   renderPortfolio(data.works);
   renderServices(data.services);
   renderJournal(data.journal);
+  initTypewriter();
+  initMouseColorCircle();
 
   const navLinks = Array.from(document.querySelectorAll('.nav-link'));
   navLinks.forEach((link) => {
@@ -15,6 +17,63 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+function initMouseColorCircle() {
+  if (!window.matchMedia('(pointer: fine)').matches) return;
+
+  const circle = document.createElement('div');
+  circle.className = 'cursor-invert';
+  circle.setAttribute('aria-hidden', 'true');
+  document.body.appendChild(circle);
+
+  const target = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+  const current = { x: target.x, y: target.y };
+
+  window.addEventListener('mousemove', (event) => {
+    target.x = event.clientX;
+    target.y = event.clientY;
+    circle.style.opacity = '1';
+  });
+
+  function animate() {
+    current.x += (target.x - current.x) * 0.22;
+    current.y += (target.y - current.y) * 0.22;
+
+    circle.style.left = `${current.x}px`;
+    circle.style.top = `${current.y}px`;
+
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+}
+
+function initTypewriter() {
+  const target = document.getElementById('heroTitle');
+  if (!target) return;
+
+  const text = target.dataset.text || target.textContent.trim();
+  target.dataset.text = text;
+  target.textContent = '';
+
+  let index = 0;
+  function tick() {
+    target.textContent = text.slice(0, index);
+    index += 1;
+
+    if (index <= text.length) {
+      setTimeout(tick, 70);
+    } else {
+      setTimeout(() => {
+        index = 0;
+        target.textContent = '';
+        tick();
+      }, 900);
+    }
+  }
+
+  tick();
+}
 
 function setProfile(profile) {
   const title = document.getElementById('heroTitle');
